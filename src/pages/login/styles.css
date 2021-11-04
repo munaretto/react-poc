@@ -1,0 +1,26 @@
+@import '../../shared/styles/variables.css';
+
+form {
+    height: 100%;
+}
+
+.action {
+    margin-top: 32px;
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: .8em;
+}
+
+.forgot-password a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--primary-color);
+}

@@ -13,9 +13,15 @@ form {
     font-size: .8em;
 }
 
+.forgot-password a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .forgot-password a:hover {
     color: var(--primary-color);
     cursor: pointer;
+    
 }
 
 .title {

@@ -18,10 +18,7 @@ export default class Login extends React.Component<{}, LoginState> {
   handleChange(event: any) {
     const name = event.target.name;
     const value = event.target.value;
-
     this.setState({ [name]: value } as LoginState);
-
-    console.log("NEW STATE: ", this.state);
   }
 
   handleSubmit(event: any) {
@@ -60,10 +57,10 @@ export default class Login extends React.Component<{}, LoginState> {
               placeholder="Informe sua senha"
             />
             <section className="action">
-              <Button onClick={this.handleSubmit} value="Entrar" primary />
+              <Button onClick={this.handleSubmit} primary>ENTRAR</Button>
             </section>
             <section className="forgot-password">
-              <a target="_blank" rel="noopener noreferrer">Esqueci minha senha</a>
+              <a href="/" rel="noopener noreferrer">Esqueci minha senha</a>
             </section>
           </form>
         </Card>

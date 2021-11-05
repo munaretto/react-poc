@@ -1,10 +1,9 @@
+import React from "react";
 import { ButtonProps } from "../../interfaces/button.props.interface";
 import { CustomButton } from "./styles";
 
-const Button: React.FC<ButtonProps> = (props): JSX.Element => {
-    return (
-        <CustomButton {...props}/>
-    )
+export default class Button extends React.Component<ButtonProps, {}> {
+  render() {
+    return <CustomButton {...this.props} />;
+  }
 }
-
-export default Button;

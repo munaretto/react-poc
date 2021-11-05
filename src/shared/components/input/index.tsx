@@ -1,14 +1,15 @@
+import React from "react";
 import { InputProps } from "../../interfaces/inputProps.interface";
 import { InputField } from "./styles";
-import './styles.css'
+import "./styles.css";
 
-const Input: React.FC<InputProps> = (props): JSX.Element => {
+export default class Input extends React.Component<InputProps, {}> {
+  render() {
     return (
-        <section className="input-wrapper">
-            <label>{props.label}</label>
-            <InputField {...props}/>
-        </section>
-    )
+      <section className="input-wrapper">
+        <label>{this.props.label}</label>
+        <InputField {...this.props} />
+      </section>
+    );
+  }
 }
-
-export default Input;

@@ -10,6 +10,9 @@ export const CustomButton = styled.button`
   border: 1px solid;
   border-radius: 4px;
   height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
 
   :hover {
     webkit-animation: blink-2 0.6s both;

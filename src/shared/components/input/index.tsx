@@ -1,7 +1,6 @@
 import React from "react";
 import { InputProps } from "../../interfaces/inputProps.interface";
 import { InputField } from "./styles";
-import "./styles.css";
 
 export default class Input extends React.Component<InputProps, {}> {
   render() {

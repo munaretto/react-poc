@@ -1,32 +1,94 @@
-@import '../../shared/styles/variables.css';
+@import "../../shared/styles/variables.css";
 
-form {
-    height: 100%;
+/* @TODO ajustar responsividade */
+@media (max-width: 800px) {
+  .content-wrapper {
+    flex-flow: column;
+  }
+
+  .cta {
+    width: 60% !important;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+
+  .login-action {
+    width: 60% !important;
+    border-radius: 0px 0px 10px 10px !important;
+  }
+
+  .login-action .spacer {
+    margin-top: 94px;
+  }
 }
 
-.action {
-    margin-top: 32px;
+.content-wrapper {
+  width: 80%;
+  max-width: 1024px;
+  height: 600px;
+  display: flex;
 }
 
-.forgot-password {
-    text-align: center;
-    font-size: .8em;
+h1,
+h2 {
+  font-size: var(--h1-text-size);
+  font-weight: 700;
 }
 
-.forgot-password a {
-    text-decoration: none;
-    color: var(--text-color);
+.social-login button{
+    width: 100% !important;
 }
 
-.forgot-password a:hover {
-    color: var(--primary-color);
-    cursor: pointer;
-    
+.header {
+  height: 75px;
 }
 
-.title {
-    margin-bottom: 24px;
-    text-align: center;
-    font-size: 1.3em;
-    color: var(--primary-color);
+.spacer {
+  margin-top: 45px;
+}
+
+.cta {
+  background-color: var(--primary-color);
+  width: 30%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 69px;
+  color: var(--background-white);
+}
+
+.login-action {
+  background-color: var(--background-white);
+  width: 70%;
+  border-radius: 0px 10px 10px 0px;
+  padding: 69px;
+}
+
+.login-and-recovery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separator {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.separator p {
+  padding: 0 8px 0 8px;
+}
+
+.separator:before,
+.separator:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.login-action .spacer .input-wrapper:not(:first-child),
+.login-action .spacer .login-and-recovery {
+  margin-top: 16px;
 }

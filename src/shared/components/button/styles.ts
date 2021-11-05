@@ -4,11 +4,12 @@ import "../../styles/variables.css";
 
 export const CustomButton = styled.button`
   padding: 16px;
-  color: ${(props: ButtonProps) => (props.primary ? "white" : "#43A047")};
-  background-color: ${(props: ButtonProps) => props.primary ? "#43A047" : "white"};
-  border-color: ${(props: ButtonProps) => props.primary ? "#43A047" : "white"};
+  color: ${(props: ButtonProps) => (props.primary ? "white" : "#00558D")};
+  background-color: ${(props: ButtonProps) => props.primary ? "#00558D" : "white"};
+  border-color: ${(props: ButtonProps) => props.primary ? "#00558D" : "white"};
   border: 1px solid;
   border-radius: 4px;
+  display: flex;
   height: 40px;
   align-items: center;
   justify-content: center;

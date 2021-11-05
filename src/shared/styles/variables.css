@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #43A047;
+    --primary-color: #00558D;
+    --link-color: #37AFFF;
     --background-grey: #EEEEEE;
     --background-white: white;
     --dark-grey: #c8c8c8;
     --text-color: black;
+    --h1-text-size: 32px;
 }
